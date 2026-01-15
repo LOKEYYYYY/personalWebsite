@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokey’s Website</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=IM+Fell+English+SC&family=Love+Ya+Like+A+Sister&family=Monsieur+La+Doulaise&family=Ribeye&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="layout">
+
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="prof-hero">
+                    <!--let the text curve around picture-->
+                      <svg viewBox="0 0 200 200" class="curve-text">
+                        <path id="circlePath"
+                            d="M 100, 100
+                                m -70, 0
+                                a 70,70 0 1,1 140,0
+                                a 70,70 0 1,1 -140,0" fill="none"/>
+                        <text>
+                        <textPath href="#circlePath">
+                            Lokey’s Website
+                        </textPath>
+                        </text>
+                    </svg>
+                    <img src="image/prof-pic.jpeg" alt="profile header image">
+                </div>
+
+                <div class="prof-content" class="open">
+                    <nav class="nav-panel">
+                        <a href="index.html">Portfolio</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="learning.html">Journal</a>
+                    </nav>
+                </div>
+
+                <div class="prof-content2">
+                    <div class="aboutMe">
+                        <h3>About Me <i class="fa fa-heart"></i></h1>
+                        <p>
+                            Hi, I’m Ying Xin. </br>
+                            I’m learning cybersecurity with a focus on Linux, Python, and core security concepts like CompTIA Security+.
+
+                            I also explore HTML, CSS, and JavaScript to understand how real applications are built and how security fits into them.
+
+                            This site documents my learning journey and experiments as I grow step by step.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prof-footer">
+                    <a href=""><i class="fa-brands fa-instagram" ></i></a>
+                    <a href=""><i class="fa-brands fa-github" ></i></a>
+                    <button class="page-next" style="border: 0; background: none;"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            
+        </aside>
+
+        <section class="content">
+            <section class="hero">
+                <h1>Hi bro </h1>
+            </section>
+        </section>
+
+    </main>
+    <script>
+        document.querySelector(".page-next").onclick = () => {
+        document.querySelector(".prof-content2").classList.toggle("open");
+        };
+    </script>
+</body>
+</html>
